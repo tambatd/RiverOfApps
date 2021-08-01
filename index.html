@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River</title>
+    <style>
+        html{
+            background-color: #fdfac3;
+        }
+        #motion-demo {
+        offset-path: path('M0.996486 141.514C0.996486 141.514 752.172 409.443 738.144 262.802C724.115 116.162 1903.13 -212.109 1904.87 204.378');
+        animation: move 35000ms infinite alternate ease-in-out;
+        width: 40px;
+        height: 40px;
+        }
+        .rotate {
+          animation: rotation 50s infinite linear;
+        }
+        .rotate_n {
+          animation: rotation_n 50s infinite linear;
+        }
+        @keyframes move {
+        0% {
+            offset-distance: 0%;
+        }
+        100% {
+            offset-distance: 100%;
+        }
+        }
+        div{
+            position: absolute;
+            top: 35%;   
+        }
+
+        @keyframes rotation {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+          }
+        }
+        @keyframes rotation_n {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(-359deg);
+          }
+        }
+    </style>
+</head>
+<body>
+    <div  id="motion-demo"><img class="rotate" height="40px" width="40px" src="Assets/Instagram.png" alt=""></div>      
+    <div  style="top: 40%; left: 5%;" id="motion-demo"><img class="rotate_n" height="40px" width="40px" src="Assets/discord.png" alt=""></div>
+    <div  style="top: 45%;" id="motion-demo"><img class="rotate" height="40px" width="40px" src="Assets/twitter.png" alt=""></div>
+    <div  style="top: 35%; left: 15%;"  id="motion-demo"><img class="rotate" height="58px" width="58px" src="Assets/line.png" alt=""></div>
+    <div  style="top: 35%; left: -5%;"  id="motion-demo"><img class="rotate_n" height="45px" width="45px" src="Assets/ios.png" alt=""></div>
+    <div  style="top: 45%; left: 10%;" id="motion-demo"><img class="rotate_n" height="40px" width="40px" src="Assets/twitch1.png" alt=""></div>
+    <svg style="z-index: -1; position:absolute; top: 30%;" width="1904" height="531" viewBox="0 0 1904 531" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1904 460.781V94.9968C1904 94.9968 1400.24 -88.3214 887.966 54.3541C375.695 197.03 0 94.9968 0 94.9968V460.781C0 460.781 220.312 622.498 946.627 455.096C1672.94 287.694 1904 460.781 1904 460.781Z" fill="#CAECEE"/>
+    </svg>
+            
+</body>
+</html>
